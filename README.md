@@ -26,7 +26,27 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 
 ## Components
 
-### Why???
+Components should be made as small as possible for easy testing.
+
+Every component should follow this pattern
+
+* Its own file
+* Its own CSS class
+  * Or ID if its an entire page
+* Associated scss file
+* Associated test file
+
+Example
+
+* `/some-directory/ComponentName.jsx`
+* `<div className="ComponentName"></div>`
+  * Or `<div id="ComponentName"></div>`
+* `/stylesheets/some-directory/_ComponentName.scss``
+* `/test/some-directory/ComponentName.tests.js`
+
+### Why?
+
+This makes it clear what files, tests, styles relate to each other.
 
 ## CSS Property Order
 
