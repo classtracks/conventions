@@ -22,7 +22,23 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 
 ## Case
 
-### Why???
+CSS classes should match the same case of the component (generally **UpperCamelCase**) or should be dash-case
+
+Directories should be **dash-case**
+
+Files should match the same case as what is being exported
+
+* If nothing is being exported, the file name should be **snake_case**
+
+Variables should be **lowerCamelCase**
+
+* If a variable is a container or component, it should be **UpperCamelCase**
+
+### Why?
+
+**lowerCamelCase** variables, **snake_case** file names, and **dash-case** directories / CSS classes are standards in many communities.
+
+**UpperCamelCase** for all things component related has become a standard in React and makes it easy for IDE autocomplete suggestions.
 
 ## Components
 
