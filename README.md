@@ -18,17 +18,46 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 
 ## Abbreviations
 
+### Why???
+
 ## Case
+
+### Why???
 
 ## Components
 
+### Why???
+
 ## CSS Property Order
+
+### Why???
 
 ## Import Order
 
-## Spacing
+Imports should be made in the following order
 
-## Testing
+1. NPM packages
+1. Meteor packages
+1. *--space--*
+1. Collections (absolute import)
+1. *--space--*
+1. Methods / actions (absolute import)
+1. *--space--*
+1. Global components (absolute import)
+1. Containers (relative import)
+1. Components (relative import)
+
+### Why?
+
+External packages are first as a standard in many communities.
+
+The rest is dictated by what is needed to load a page.
+
+1. The page needs data (collections)
+1. The page needs to be able to act on that data (methods / actions)
+1. The page needs to be able to render that data (global components / containers / components)
+
+## Spacing
 
 2 spaces, never 4, never tabs.
 
@@ -39,6 +68,12 @@ Ternary (`a ? b : c`) should be multi line when it feels too long. But if that's
 Within JSX, ternary operators should always be multiline. 
 
 All JSX and HTML tags should be on their own line. Text should also be on its own line.
+
+### Why???
+
+## Testing
+
+### Why???
 
 ## Variable Naming
 
@@ -53,6 +88,8 @@ Booleans should be adjectives.
 * Booleans do not need words like *has* or *is* if they're an adjective (`if (pretty)` works as well as `if (isPretty)`)
 * If involving a noun, then a boolean should add a verb or adjective (`showButton` is less confusing than `button`)
 
+### Why???
+
 ## Variable Order
 
 Variable declarations and object keys should be in the following order
@@ -63,3 +100,5 @@ Variable declarations and object keys should be in the following order
 1. `data` attributes
 1. non event functions
 1. event handlers (`onChange`, `onClick`, etc)
+
+### Why???
