@@ -30,6 +30,16 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 
 ## Testing
 
+2 spaces, never 4, never tabs.
+
+Do not align characters by using more or less spaces.
+
+Ternary (`a ? b : c`) should be multi line when it feels too long. But if that's long, consider breaking it up into earlier variables.
+
+Within JSX, ternary operators should always be multiline. 
+
+All JSX and HTML tags should be on their own line. Text should also be on its own line.
+
 ## Variable Naming
 
 Names should make sense and be logical.
