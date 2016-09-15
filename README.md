@@ -18,7 +18,22 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 
 ## Abbreviations
 
-### Why???
+Abbreviations should almost never be used with a few exceptions.
+
+Ideally any abbreviation should be
+
+* Commonly accepted
+* Just a shortening of another word
+* Significantly shorter than the original word
+* Easily pronounceable
+* Not easily confused with another word
+* Middle letters, especially vowels, should not be removed
+
+### Why?
+
+Because we write code for humans, not for machines.
+
+Also, everything gets minimized and uglified in production anyway, no need to do it early.
 
 ## Case
 
