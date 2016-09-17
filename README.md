@@ -81,7 +81,52 @@ This makes it clear what files, tests, styles relate to each other.
 
 ## CSS Property Order
 
-### Why???
+### Why?
+
+Some components may end up having dozens of individual CSS property rules.
+Lets try to make it easier to quickly scan a component's style declarations and understand how it is intended to look and behave.
+
+Our convention is "grouped-by-type", based on [this CSS Tricks post.](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
+
+(Note: Comments and line breaks shown below not necessary in actual files.)
+
+```
+.selector {
+  /* Positioning */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  /* Display & Box Model */
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 10px solid #333;
+  margin: 10px;
+
+  /* Color */
+  background: #000;
+  color: #fff;
+  opacity: .5;
+
+  /* Text */
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: right;
+
+  /* Other */
+  cursor: pointer;
+
+  /* Transitions & Animations */
+  transition: all 1s;
+  animation: 3s slidein;
+}
+```
 
 ## Import Order
 
@@ -116,7 +161,7 @@ Do not align characters by using more or less spaces.
 
 Ternary (`a ? b : c`) should be multi line when it feels too long. But if that's long, consider breaking it up into earlier variables.
 
-Within JSX, ternary operators should always be multiline. 
+Within JSX, ternary operators should always be multiline.
 
 All JSX and HTML tags should be on their own line. Text should also be on its own line.
 
