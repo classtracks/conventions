@@ -72,7 +72,6 @@ Every component should follow this pattern
 
 * Its own file
 * Its own CSS class
-  * Or ID if its an entire page
 * Associated scss file
 * Associated test file
 
@@ -80,7 +79,6 @@ Example
 
 * `/some-directory/ComponentName.jsx`
 * `<div className="ComponentName"></div>`
-  * Or `<div id="ComponentName"></div>`
 * `/stylesheets/some-directory/_ComponentName.scss``
 * `/test/some-directory/ComponentName.tests.js`
 
