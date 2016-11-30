@@ -7,6 +7,7 @@ The rest of our conventions, which are not enforceable by ESLint, are found here
 ## Table of Contents
 
 * [Abbreviations](#abbreviations)
+  * [Accepted Abbreviations](#accepted-abbreviations)
 * [Case](#case)
 * [Components](#components)
 * [CSS Property Order](#css-property-order)
@@ -28,6 +29,14 @@ Ideally any abbreviation should be
 * Easily pronounceable
 * Not easily confused with another word
 * Middle letters, especially vowels, should not be removed
+
+### Accepted Abbreviations
+
+* auth - authorization
+* id - identification
+* nav - navigation
+* pub - publication
+* sub - subscription
 
 ### Why?
 
