@@ -37,6 +37,7 @@ Ideally any abbreviation should be
 * nav - navigation
 * pub - publication
 * sub - subscription
+* temp - temporary
 
 ### Why?
 
@@ -88,14 +89,7 @@ This makes it clear what files, tests, styles relate to each other.
 
 ## CSS Property Order
 
-### Why?
-
-Some components may end up having dozens of individual CSS property rules.
-Lets try to make it easier to quickly scan a component's style declarations and understand how it is intended to look and behave.
-
-Our convention is "grouped-by-type", based on [this CSS Tricks post.](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
-
-(Note: Comments and line breaks shown below not necessary in actual files.)
+Comments and line breaks shown below not necessary in actual files.
 
 ```
 .selector {
@@ -134,6 +128,13 @@ Our convention is "grouped-by-type", based on [this CSS Tricks post.](https://cs
   animation: 3s slidein;
 }
 ```
+
+### Why?
+
+Some components may end up having dozens of individual CSS property rules.
+Lets try to make it easier to quickly scan a component's style declarations and understand how it is intended to look and behave.
+
+Our convention is "grouped-by-type", based on [this CSS Tricks post.](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
 
 ## Import Order
 
