@@ -148,8 +148,8 @@ Imports should be made in the following order
 1. Methods / actions (absolute import)
 1. *--space--*
 1. Global components (absolute import)
-1. Containers (relative import)
-1. Components (relative import)
+1. Containers (relative import if in the same module)
+1. Components (relative import if in the same module)
 
 ### Why?
 
