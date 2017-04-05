@@ -32,6 +32,7 @@ Ideally any abbreviation should be
 
 ### Accepted Abbreviations
 
+* alt - alternate
 * auth - authorization
 * id - identification
 * nav - navigation
